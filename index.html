@@ -261,7 +261,8 @@
     <img src="static/images/Uno-vs-specdec-website.png" alt="Comparison of Uno with speculative decoding methods" style="width: 100%; height: auto;">
   </div>
     <h4 class="subtitle has-text-centered image-caption">
-      <i>(a)</i> Additional parameters introduced by each method, in millions. Our method, Uno, introduces the least amount.
+      <i>(a)</i> Additional parameters introduced by each method (in millions) and peak GPU memory usage. 
+      <b>Our method, Uno, introduces the least amount of parameters and has the lowest memory usage during inference.</b>
       <i>(b)</i> System versus per-request throughput across batch sizes (concurrency C). 
       <b>Uno Pareto-dominates speculative decoding</b> and achieves up to 2.5&times; speedup over the base AR model. 
       Parentheses indicate the sampler configuration yielding the highest throughput for Uno.
